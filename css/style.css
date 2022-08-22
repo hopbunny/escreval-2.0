@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(34, 34, 34);
+    font-family: 'Poppins', sans-serif;
+    padding-inline: 4rem;
+    color: white;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* HEADER */
+
+header {
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    align-items: center;
+    display: flex;
+}
+
+li {
+    display: inline-flex;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+.title h1 {
+    line-height: 2rem;
+    font-weight: 600;
+    margin-top: 5px;
+
+}
+
+.title h2 {
+    line-height: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* INDEX HOME */
+
+.index {
+    align-items: top;
+    display: flex;
+    width: 100%;
+}
+
+.main {
+    width: 50%;
+}
+
+.index .main h2 {
+    line-height: 100%;
+    font-size: 3rem;
+}
+
+.index .main p {
+    text-align: justify;
+    padding-right: 20px;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.image {
+    justify-content: center;
+    display: flex;
+    width: 50%;
+}
+
+.image-logo {
+    padding: 5px;
+    width: 300px;
+}
+
+/* INDEX SERVICE*/
+
+.service-container {
+    margin: auto;
+}
+
+.service-title {
+    justify-content: center;
+    display: flex;
+}
+
+.primary-title {
+    border-bottom: 4px solid rgb(132, 14, 201);
+    padding-bottom: 0.2rem;
+    font-size: 2rem;
+}
+
+.service {
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    margin-top: 2rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+}
+
+.service:hover {
+    background: transparent;
+    transform: scale(1.2);
+}
+
+.service-img {
+    border-radius: 10%;
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+.secondary-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.text-service {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.images {
+    justify-content: space-between;
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+}
+
+/* INDEX ABOUT */
+
+.about {
+    display: flex;
+}
+
+.about .about-me {
+    width: 50%;
+}
+
+.about .about-me h2 {
+    line-height: 100%;
+    font-size: 3rem;
+}
+
+.about .about-me p {
+    text-align: justify;
+    padding-right: 20px;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.about .maps {
+    justify-content: center;
+    display: flex;
+    width: 50%;
+}
+
+.about .maps iframe {
+    height: 320px;
+    width: 400px;
+}
+
+/* INDEX CONTACT  */
+
+.contact-information {
+    justify-content: center;
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.information {
+    border-bottom: 4px solid rgb(132, 14, 201);
+    padding-bottom: 0.2rem;
+    font-size: 2rem;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-base {
+    flex-direction: column;
+    padding: 0 20px;
+    display: flex;
+    width: 50%;
+}
+
+.contact-base .contact-title {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.contact-base p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.contact-base .contact-subtitle {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.contact-form {
+    border-left: 2px solid whitesmoke;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    width: 50%;
+}
+
+.contact-form .contact-input {
+    width: 400px;
+    height: 50px;
+}
+
+.contact-form .checkbox {
+    margin: auto;
+}
+
+[type="checkbox"]:checked + label {
+    color: rgb(132, 14, 201);
+}
+
+#name,
+#email,
+#telephone,
+#message {
+    resize: none;
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    background-color: rgb(34, 34, 34);
+    border-bottom: 2px solid rgb(132, 14, 201);
+}
+
+#checkbox {
+    width: 50px;
+}
+
+.button button {
+    width: 80px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgb(34, 34, 34);
+    border: 1.5px solid rgb(132, 14, 201);
+}
+
+.button button:hover {
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
